@@ -1,27 +1,24 @@
 @font-face {
     font-family: "Roboto";
-    src: url("/fonts/Roboto/Roboto-Regular.ttf");
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
     font-family: "Anta";
-    src: url("/fonts/Anta/Anta-Regular.ttf");
+    src: url("fonts/Anta/Anta-Regular.ttf");
 }
 
 @font-face {
     font-family: "Oswald";
-    src: url("/fonts/Oswald/static/Oswald-Regular.ttf")
+    src: url("fonts/Oswald/static/Oswald-Regular.ttf")
 }
 
 body {
+    background-color: lightblue;
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    transition: background-color 0.5 ease;
 }
 
 .sidebar {
@@ -66,32 +63,29 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
 .content h1 {
-    font-family: "Roboto";
-    font-size: 5rem;
-}
-
-.content button {
-    width: max-content;
-    padding: 10px;
-    border-radius: 1rem;
-    font-family: "Anta";
-    margin-top: 100px;
-    font-size: 2rem;
-    transition: color 0.3s;
-}
-
-.content button:hover {
-    cursor: pointer;
-    color: blue;
-}
-
-.content input {
     margin-top: 50px;
-    width: 25vh;
-    border: 2px solid black;
-    padding: 10px;
-    font-family: "Anta";
+    font-family: "Roboto";
+}
+
+.content p {
+    font-family: "Oswald";
+    font-size: x-large;
+    width: 60%;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    border: solid 4px black;
 }
