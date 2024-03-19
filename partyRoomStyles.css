@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto/Roboto-Regular.ttf");
@@ -14,18 +20,15 @@
 }
 
 body {
-    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
     background-color: #fff;
     transition: background-color 0.5 ease;
 }
 
 .sidebar {
-    width: 100%;
+    width: 100vw;
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -69,8 +72,10 @@ body {
 }
 
 .content h1 {
+    margin-top: 50px;
     font-family: "Roboto";
     font-size: 5rem;
+    text-align: center;
 }
 
 .content button {
@@ -94,4 +99,27 @@ body {
     border: 2px solid black;
     padding: 10px;
     font-family: "Anta";
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar a {
+        font-size: 1.1rem;
+    }
+    
+    .sidebar a.active {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .container-sidebar{
+        height: 15vh;
+    }
+
+    .content h1 {
+        font-size: 3.5rem;
+    }
 }

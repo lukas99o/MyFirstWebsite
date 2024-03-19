@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto/Roboto-Regular.ttf");
@@ -14,22 +20,14 @@
 }
 
 body {
-    display: flex;
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
-}
-
-body {
     background-color: lightblue;
-    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .sidebar {
-    width: 100%;
+    width: 100vw;
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -68,15 +66,16 @@ body {
 
 .container {
     margin-top: 50px;
-    width: 50rem;
+    width: 55rem;
     background-color: white;
     height: 100%;
     border: 2px solid black;
-    padding-bottom: 2rem;
     margin-bottom: 50px;
+    padding-bottom: 1rem;
 }
 
 .contact-info {
+    margin-top: 10px;
     margin-left: 20px;
     width: 26%;
     font-family: "Oswald";
@@ -113,6 +112,58 @@ body {
     margin-left: 7rem;
     font-family: "Oswald";
     margin-top: 0px;
-    font-size: 0.85rem;
-    color: black;
+    font-size: 0.9rem;
+    color: darkblue;
+}
+
+@media screen and (max-width: 768px){
+    .sidebar a {
+        font-size: 1.1rem;
+    }
+    
+    .sidebar a.active {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .container-sidebar{
+        height: 15vh;
+    }
+
+    .container {
+        width: 95vw;
+    }
+
+    .contact-info {
+        margin-bottom: 30px;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .text {
+        margin: 0px;
+        margin-left: 10px;
+    }
+
+    .work {
+        margin: 0px;
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .education {
+        margin: 0px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .other {
+        margin: 0px;
+        margin-left: 10px;
+    }
 }
